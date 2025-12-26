@@ -1,0 +1,18 @@
+# Path to your Obsidian vault
+vault_path: "C:/Utilities/Obsidian/Vaults/R42 Sync Vault"
+
+# Path to templates folder (can be in the same repo)
+template_dir: ./templates
+
+# Output directory for generated LaTeX/PDF files
+output_base_dir: C:\Users\rasmu\Desktop
+
+# Optional settings
+vault_name: "R42 Sync Vault"
+attachments_folder: "4. Meta/Attachments"
+default_template: "default"
+obsidian_uri: true
+create_zip: true
+latex_engine: "pdflatex"
+compile_twice: true
+keep_aux_files: false

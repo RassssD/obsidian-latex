@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Page setup
+\geometry{margin=1in}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+% Title information
+\title{ {{title}} }
+\author{ {{author}} }
+\date{ {{date}} }
+
+% Custom commands (user can add their own)
+{{custom_macros}}
+
+\begin{document}
+
+\maketitle
+
+{{body}}
+
+\end{document}

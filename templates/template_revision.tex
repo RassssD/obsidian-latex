@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{tcolorbox}  % For colored boxes
+\usepackage{fancyhdr}   % For headers/footers
+\usepackage{multicol}   % For two-column sections if needed
+
+% Tight spacing for revision
+\geometry{
+    margin=0.75in,
+    headheight=14pt
+}
+
+% Theorem environments with boxes
+\tcbuselibrary{theorems}
+\newtcbtheorem{theorem}{Theorem}{
+    colback=blue!5,
+    colframe=blue!75!black,
+    fonttitle=\bfseries
+}{thm}
+
+\newtcbtheorem{definition}{Definition}{
+    colback=green!5,
+    colframe=green!75!black,
+    fonttitle=\bfseries
+}{def}
+
+\newtcbtheorem{example}{Example}{
+    colback=orange!5,
+    colframe=orange!75!black,
+    fonttitle=\bfseries
+}{ex}
+
+% Compact section headers
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+
+% Header with document title
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small {{title}} }
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Title
+\title{\textbf{ {{title}} }}
+\author{ {{author}} }
+\date{ {{date}} }
+
+{{custom_macros}}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+{{body}}
+
+\end{document} 
